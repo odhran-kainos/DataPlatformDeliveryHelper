@@ -1,4 +1,4 @@
-[⬅️ Back to Main SDLC Page](data_platform_sdlc.md) | [⬅️ Back to Data Storage Part 1](05_data_storage.md)
+[⬅️ Back to Main SDLC Page](00_data_platform_sdlc.md) | [⬅️ Back to Data Storage Part 1](05_data_storage.md)
 
 # Advanced Data Storage Topics
 ## Performance Optimization, Monitoring & Real-World Scenarios

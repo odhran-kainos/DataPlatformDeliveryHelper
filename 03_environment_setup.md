@@ -1,4 +1,4 @@
-[⬅️ Back to Main SDLC Page](data_platform_sdlc.md)
+[⬅️ Back to Main SDLC Page](00_data_platform_sdlc.md)
 
 # Environment Setup & Provisioning for Data Platform Projects
 ## LLM-Optimized Framework for Infrastructure Automation
