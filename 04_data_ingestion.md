@@ -7,7 +7,7 @@
 
 ---
 
-## 🤖 LLM Data Ingestion Assistant Guide
+## 1. 🤖 LLM Data Ingestion Assistant Guide
 
 ### LLM Roles in Data Ingestion
 
@@ -63,7 +63,7 @@ Provide step-by-step resolution using the diagnostic framework from Section 9.
 
 ---
 
-## 📊 Ingestion Strategy Decision Framework
+## 2. 📊 Ingestion Strategy Decision Framework
 
 ### Decision Tree: Ingestion Pattern Selection
 
@@ -100,6 +100,7 @@ graph TD
 
 ### Ingestion Tool Selection Framework
 
+**JSON Template (for system integration):**
 ```json
 {
   "ingestion_tools": {
@@ -147,9 +148,20 @@ graph TD
 }
 ```
 
+**Markdown Table (for easy comparison):**
+
+| Category | Tool | Best For | Strengths | Weaknesses |
+|---|---|---|---|---|
+| **Batch** | Apache Airflow | Complex workflows, custom logic | Workflow orchestration, extensible | Complexity, resource intensive |
+| **Batch** | AWS Glue | AWS environments, simple ETL | Serverless, auto-scaling | AWS lock-in, limited customization |
+| **Batch** | Azure Data Factory | Azure environments, hybrid scenarios | Visual interface, hybrid connectivity | Azure lock-in, complex pricing |
+| **Streaming** | Apache Kafka | High-volume streaming, event sourcing | High throughput, durability, ecosystem | Operational complexity, learning curve |
+| **Streaming** | AWS Kinesis | AWS environments, real-time analytics | Managed service, auto-scaling | AWS lock-in, shard limitations |
+| **Streaming** | Confluent Cloud | Enterprise Kafka, multi-cloud | Managed Kafka, enterprise features | Cost, vendor dependency |
+
 ---
 
-## 🔧 Comprehensive Connector Library
+## 3. 🔧 Comprehensive Connector Library
 
 ### 3.1 Database Connectors
 
@@ -579,7 +591,7 @@ class KafkaStreamingConnector:
 
 ---
 
-## 🏗️ Pipeline Development Toolkit
+## 4. 🏗️ Pipeline Development Toolkit
 
 ### 4.1 Apache Airflow Pipeline Templates
 
@@ -932,7 +944,7 @@ class SchemaEvolutionHandler:
 
 ---
 
-## 📊 Data Quality & Validation Framework
+## 5. 📊 Data Quality & Validation Framework
 
 ### 5.1 Comprehensive Data Quality Rules
 
@@ -1293,7 +1305,7 @@ data_profiling:
 
 ---
 
-## 🚀 Performance Optimization Guide
+## 6. 🚀 Performance Optimization Guide
 
 ### 6.1 Throughput Optimization Strategies
 
@@ -1475,7 +1487,7 @@ class MemoryEfficientProcessor:
 
 ---
 
-## 📊 Monitoring & Observability
+## 7. 📊 Monitoring & Observability
 
 ### 7.1 Pipeline Monitoring Dashboard
 
@@ -1661,7 +1673,7 @@ def monitored_pipeline_execution(pipeline_name: str, source: str):
 
 ---
 
-## 🔧 Troubleshooting & Diagnostics
+## 8. 🔧 Troubleshooting & Diagnostics
 
 ### 8.1 Common Issues and Solutions
 
@@ -1894,7 +1906,7 @@ class PipelineDiagnostics:
 
 ---
 
-## 📚 Real-World Scenarios & Examples
+## 9. 📚 Real-World Scenarios & Examples
 
 ### 9.1 E-commerce Data Integration Hub
 
@@ -2080,7 +2092,7 @@ monitoring:
 
 ---
 
-## 📖 Quick Reference
+## 10. 📖 Quick Reference
 
 ### LLM Ingestion Prompts
 
