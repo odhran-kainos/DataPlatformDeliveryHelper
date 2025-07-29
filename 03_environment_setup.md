@@ -7,7 +7,7 @@
 
 ---
 
-## 🤖 LLM Environment Assistant Guide
+## 1. 🤖 LLM Environment Assistant Guide
 
 ### LLM Roles in Environment Setup
 
@@ -64,7 +64,7 @@ Provide step-by-step troubleshooting using the diagnostic framework from Section
 
 ---
 
-## 📊 Environment Strategy Decision Framework
+## 2. 📊 Environment Strategy Decision Framework
 
 ### Decision Tree: Environment Architecture
 
@@ -92,6 +92,7 @@ graph TD
 
 ### Infrastructure-as-Code Tool Selection
 
+**JSON Template (for system integration):**
 ```json
 {
   "iac_tool_comparison": {
@@ -123,9 +124,18 @@ graph TD
 }
 ```
 
+**Markdown Table (for easy comparison):**
+
+| Tool | Best For | Strengths | Weaknesses |
+|---|---|---|---|
+| **Terraform** | Multi-cloud, complex infrastructure | Multi-cloud, large ecosystem, mature | State management, learning curve |
+| **AWS CloudFormation** | AWS-only, simple to medium complexity | AWS-native, integrated, no state files | AWS-only, verbose syntax |
+| **Azure Bicep** | Azure-only, modern development | Azure-native, clean syntax, type safety | Azure-only, newer ecosystem |
+| **Pulumi** | Developer teams, complex logic | Uses programming languages, testing | Complexity, smaller community |
+
 ---
 
-## 🏗️ Infrastructure-as-Code Toolkit
+## 3. 🏗️ Infrastructure-as-Code Toolkit
 
 ### 3.1 Multi-Cloud Environment Templates
 
@@ -457,6 +467,7 @@ output sparkPoolName string = sparkPool.name
 
 #### Environment Variables Template
 
+**JSON Template (for IaC automation):**
 ```json
 {
   "environment_config": {
@@ -505,9 +516,17 @@ output sparkPoolName string = sparkPool.name
 }
 ```
 
+**Markdown Table (for easy reference):**
+
+| Environment | Resource Sizing | Auto Scaling | Backup Retention (Days) | Monitoring | Cost Strategy |
+|---|---|---|---|---|---|
+| **Development** | Small | Off | 7 | Basic | Aggressive |
+| **Testing** | Medium | On | 30 | Detailed | Moderate |
+| **Production** | Large | On | 2555 | Comprehensive | Balanced |
+
 ---
 
-## 🔒 Security & Compliance Automation
+## 4. 🔒 Security & Compliance Automation
 
 ### 4.1 Security Baseline Templates
 
@@ -765,7 +784,7 @@ gdpr_compliance:
 
 ---
 
-## 🚀 CI/CD Pipeline Library
+## 5. 🚀 CI/CD Pipeline Library
 
 ### 5.1 GitHub Actions Pipeline Templates
 
@@ -1047,7 +1066,7 @@ stages:
 
 ---
 
-## 📊 Monitoring & Observability Setup
+## 6. 📊 Monitoring & Observability Setup
 
 ### 6.1 Infrastructure Monitoring Templates
 
@@ -1116,7 +1135,7 @@ alerting_rules:
 
 ---
 
-## 💰 Cost Optimization Framework
+## 7. 💰 Cost Optimization Framework
 
 ### 7.1 Cost Monitoring Templates
 
@@ -1226,7 +1245,7 @@ class CostOptimizer:
 
 ---
 
-## 🔧 Troubleshooting & Diagnostics
+## 8. 🔧 Troubleshooting & Diagnostics
 
 ### 8.1 Common Issues and Solutions
 
@@ -1301,7 +1320,7 @@ echo "=== Health Check Complete ==="
 
 ---
 
-## 📚 Environment Scenarios & Examples
+## 9. 📚 Environment Scenarios & Examples
 
 ### 9.1 Startup Data Platform Setup
 
@@ -1370,7 +1389,7 @@ echo "=== Health Check Complete ==="
 
 ---
 
-## 📖 Quick Reference
+## 10. 📖 Quick Reference
 
 ### LLM Environment Prompts
 
