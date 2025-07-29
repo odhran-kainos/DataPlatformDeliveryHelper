@@ -11,7 +11,7 @@
 
 ---
 
-## 🤖 LLM Data Storage Assistant Guide
+## 1. 🤖 LLM Data Storage Assistant Guide
 
 ### LLM Roles in Data Storage
 
@@ -69,7 +69,7 @@ Provide: partitioning strategies, indexing recommendations, format optimizations
 
 ---
 
-## 📊 Storage Architecture Decision Framework
+## 2. 📊 Storage Architecture Decision Framework
 
 ### Decision Tree: Storage Layer Design
 
@@ -98,14 +98,66 @@ graph TD
 
 ### Storage Technology Selection Matrix
 
-| Use Case | Volume | Latency | Cost Priority | Recommended Technology |
-|----------|--------|---------|---------------|----------------------|
-| **Data Lake** | Very High | Medium | Low | S3/ADLS + Parquet/Delta |
-| **Data Warehouse** | High | Low | Medium | Redshift/Synapse/BigQuery |
-| **Real-time Analytics** | Medium | Very Low | High | ClickHouse/Druid/Pinot |
-| **Transactional** | Medium | Very Low | Medium | PostgreSQL/SQL Server |
-| **Document Store** | High | Low | Low | MongoDB/CosmosDB |
-| **Time Series** | Very High | Low | Low | InfluxDB/TimescaleDB |
+**JSON Template (for automation):**
+```json
+{
+  "storage_technologies": {
+    "data_lake": {
+      "volume": "Very High",
+      "latency": "Medium",
+      "cost_priority": "Low",
+      "recommended": ["S3", "ADLS", "Parquet", "Delta"],
+      "best_for": ["raw_data", "data_science", "batch_processing"]
+    },
+    "data_warehouse": {
+      "volume": "High",
+      "latency": "Low",
+      "cost_priority": "Medium",
+      "recommended": ["Redshift", "Synapse", "BigQuery"],
+      "best_for": ["analytics", "reporting", "sql_queries"]
+    },
+    "real_time_analytics": {
+      "volume": "Medium",
+      "latency": "Very Low",
+      "cost_priority": "High",
+      "recommended": ["ClickHouse", "Druid", "Pinot"],
+      "best_for": ["streaming", "real_time_queries", "dashboards"]
+    },
+    "transactional": {
+      "volume": "Medium",
+      "latency": "Very Low",
+      "cost_priority": "Medium",
+      "recommended": ["PostgreSQL", "SQL Server"],
+      "best_for": ["oltp", "crud_operations", "transactions"]
+    },
+    "document_store": {
+      "volume": "High",
+      "latency": "Low",
+      "cost_priority": "Low",
+      "recommended": ["MongoDB", "CosmosDB"],
+      "best_for": ["semi_structured", "flexible_schema", "document_storage"]
+    },
+    "time_series": {
+      "volume": "Very High",
+      "latency": "Low",
+      "cost_priority": "Low",
+      "recommended": ["InfluxDB", "TimescaleDB"],
+      "best_for": ["sensor_data", "metrics", "time_based_queries"]
+    }
+  }
+}
+```
+
+**Markdown Table (for easy reference):**
+
+| Use Case | Volume | Latency | Cost Priority | Recommended Technology | Best For |
+|----------|--------|---------|---------------|----------------------|-----------|
+| **Data Lake** | Very High | Medium | Low | S3/ADLS + Parquet/Delta | Raw data, Data Science, Batch Processing |
+| **Data Warehouse** | High | Low | Medium | Redshift/Synapse/BigQuery | Analytics, Reporting, SQL Queries |
+| **Real-time Analytics** | Medium | Very Low | High | ClickHouse/Druid/Pinot | Streaming, Real-time Queries, Dashboards |
+| **Transactional** | Medium | Very Low | Medium | PostgreSQL/SQL Server | OLTP, CRUD Operations, Transactions |
+| **Document Store** | High | Low | Low | MongoDB/CosmosDB | Semi-structured Data, Flexible Schema |
+| **Time Series** | Very High | Low | Low | InfluxDB/TimescaleDB | Sensor Data, Metrics, Time-based Queries |
 
 ### Multi-Cloud Storage Strategy Framework
 
@@ -135,7 +187,7 @@ graph TD
 
 ---
 
-## 🏗️ Comprehensive Storage Technology Toolkit
+## 3. 🏗️ Comprehensive Storage Technology Toolkit
 
 ### 3.1 AWS Storage Architecture Templates
 
@@ -696,7 +748,7 @@ OPTIONS (
 
 ---
 
-## 🏛️ Data Lake Architecture Patterns
+## 4. 🏛️ Data Lake Architecture Patterns
 
 ### 4.1 Medallion Architecture Implementation
 
