@@ -7,7 +7,7 @@
 
 ---
 
-## 🤖 LLM Collaboration Guide
+## 1. 🤖 LLM Collaboration Guide
 
 ### LLM Roles in Discovery
 The LLM can serve multiple roles during discovery:
@@ -54,7 +54,7 @@ Format output using the structured templates provided.
 
 ---
 
-## 📋 Discovery Workflow & Decision Trees
+## 2. 📋 Discovery Workflow & Decision Trees
 
 ### Discovery Process Flow
 
@@ -88,34 +88,40 @@ graph TD
 
 ---
 
-## 👥 Stakeholder Engagement Toolkit
+## 3. 👥 Stakeholder Engagement Toolkit
 
 ### Stakeholder Categories & Question Banks
 
-#### 3.1 Business Executives
+### 3.1 Business Executives
 **Role:** Strategic direction, budget approval, success metrics
 
 **Key Questions:**
 - What business outcomes are you expecting from this data platform?
-- How will you measure the success of this investment?
-- What are the top 3 business decisions this platform should enable?
-- What happens if we don't build this platform?
-- What's your timeline for seeing business value?
+- How will you measure the success of this investment? What are the top 3-5 KPIs?
+- What are the top 3 business decisions this platform should enable or improve?
+- What happens if we don't build this platform? What is the cost of inaction?
+- What's your timeline for seeing business value? (e.g., 3 months, 6 months, 1 year)
+- Who are the primary beneficiaries of this platform?
+- What are the biggest risks to this project from your perspective?
+- How does this project align with our broader company goals for this year?
 
 **Follow-up Prompts:**
 - "Can you give me a specific example of..."
 - "What would 'good enough' look like for..."
 - "How does this align with [company strategy/initiative]..."
 
-#### 3.2 Data Analysts & Scientists
+### 3.2 Data Analysts & Scientists
 **Role:** End users, analytical requirements, data quality needs
 
 **Key Questions:**
 - What analyses are you currently unable to perform due to data limitations?
-- How much time do you spend on data preparation vs. analysis?
-- What data quality issues do you encounter most frequently?
-- What tools and technologies do you prefer to work with?
-- How do you currently share insights with stakeholders?
+- How much time do you spend on data preparation vs. analysis? What are the biggest bottlenecks?
+- What data quality issues do you encounter most frequently? Can you provide examples?
+- What tools and technologies do you prefer to work with? What are the limitations of your current tools?
+- How do you currently share insights with stakeholders? What would make this process better?
+- What new data sources would be most valuable to you?
+- Describe a recent analysis that was particularly difficult. What made it challenging?
+- How do you want to consume data from the new platform (e.g., SQL, Python, BI tool)?
 
 **Technical Deep-Dive:**
 - Data access patterns and frequency
@@ -123,15 +129,18 @@ graph TD
 - Preferred data formats and interfaces
 - Integration with existing analytical tools
 
-#### 3.3 IT/Technical Teams
+### 3.3 IT/Technical Teams
 **Role:** Implementation, maintenance, technical constraints
 
 **Key Questions:**
-- What are our current technical constraints and limitations?
-- What systems must this platform integrate with?
-- What are our security and compliance requirements?
-- What's our current operational capacity for new systems?
+- What are our current technical constraints and limitations (e.g., cloud provider, approved technologies)?
+- What systems must this platform integrate with? What are the integration patterns (API, DB link, etc.)?
+- What are our security and compliance requirements (e.g., data encryption, access control)?
+- What's our current operational capacity for new systems? Who will support this platform?
 - What technical debt should we address as part of this project?
+- What are the non-negotiable technical standards we must adhere to?
+- How do you prefer to handle logging, monitoring, and alerting?
+- What are the expected SLAs for the systems this platform will depend on?
 
 **Infrastructure Assessment:**
 - Current data infrastructure inventory
@@ -139,18 +148,22 @@ graph TD
 - Operational procedures and capabilities
 - Disaster recovery and backup requirements
 
-#### 3.4 Data Owners & Stewards
+### 3.4 Data Owners & Stewards
 **Role:** Data governance, quality, access control
 
 **Key Questions:**
 - Who owns each data source and what are the access requirements?
-- What data governance policies must be enforced?
-- How is data quality currently monitored and maintained?
-- What are the data retention and archival requirements?
-- How should data lineage and audit trails be maintained?
+- What data governance policies must be enforced (e.g., data classification, usage policies)?
+- How is data quality currently monitored and maintained? What are the current data quality metrics?
+- What are the data retention and archival requirements for each data domain?
+- How should data lineage and audit trails be maintained to meet compliance needs?
+- What is the process for requesting access to new data?
+- Are there any restrictions on data movement (e.g., cross-border data transfers)?
+- How are data quality issues currently reported and resolved?
 
 ### Stakeholder Mapping Template
 
+**JSON Template (for system integration):**
 ```json
 {
   "stakeholder_id": "unique_identifier",
@@ -167,12 +180,21 @@ graph TD
 }
 ```
 
+**Markdown Table (for easy use in documents):**
+
+| Name | Role | Department | Influence | Interest | Key Concerns | Success Criteria |
+|---|---|---|---|---|---|---|
+| | | | High/Medium/Low | High/Medium/Low | | |
+| | | | High/Medium/Low | High/Medium/Low | | |
+| | | | High/Medium/Low | High/Medium/Low | | |
+
 ---
 
-## 🔍 Data Landscape Assessment Framework
+## 4. 🔍 Data Landscape Assessment Framework
 
 ### 4.1 Data Source Inventory Template
 
+**JSON Template (for system integration):**
 ```json
 {
   "data_source": {
@@ -202,6 +224,14 @@ graph TD
 }
 ```
 
+**Markdown Table (for easy use in documents):**
+
+| Source Name | Owner | Type | Frequency | Volume | Criticality | Data Quality Score |
+|---|---|---|---|---|---|---|
+| | | Database/File/API | Real-time/Daily/Weekly | | Critical/Important | |
+| | | Database/File/API | Real-time/Daily/Weekly | | Critical/Important | |
+| | | Database/File/API | Real-time/Daily/Weekly | | Critical/Important | |
+
 ### 4.2 Technical Infrastructure Assessment
 
 **Current State Checklist:**
@@ -229,7 +259,7 @@ graph TD
 
 ---
 
-## 📝 Requirements Capture Templates
+## 5. 📝 Requirements Capture Templates
 
 ### 5.1 Functional Requirements Template
 
@@ -297,7 +327,7 @@ graph TD
 
 ---
 
-## ⚠️ Risk & Assumption Management
+## 6. ⚠️ Risk & Assumption Management
 
 ### 6.1 Risk Assessment Framework
 
@@ -349,7 +379,7 @@ graph TD
 
 ---
 
-## ✅ Validation & Quality Gates
+## 7. ✅ Validation & Quality Gates
 
 ### 7.1 Discovery Completeness Checklist
 
@@ -401,7 +431,7 @@ graph TD
 
 ---
 
-## 📚 Example Scenarios & Case Studies
+## 8. 📚 Example Scenarios & Case Studies
 
 ### 8.1 Scenario: Retail Analytics Platform
 
@@ -454,7 +484,7 @@ graph TD
 
 ---
 
-## 🔄 Discovery Iteration & Refinement
+## 9. 🔄 Discovery Iteration & Refinement
 
 ### 9.1 Feedback Loops
 
@@ -492,7 +522,7 @@ graph TD
 
 ---
 
-## 🚀 Transition to Design Phase
+## 10. 🚀 Transition to Design Phase
 
 ### 10.1 Handoff Checklist
 
@@ -518,7 +548,7 @@ graph TD
 
 ---
 
-## 📖 Quick Reference
+## 11. 📖 Quick Reference
 
 ### LLM Prompt Library
 
