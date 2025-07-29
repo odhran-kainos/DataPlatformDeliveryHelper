@@ -7,7 +7,7 @@
 
 ---
 
-## 🤖 LLM Architecture Assistant Guide
+## 1. 🤖 LLM Architecture Assistant Guide
 
 ### LLM Roles in Architecture & Design
 
@@ -62,7 +62,7 @@ Identify risks and suggest improvements using the review templates.
 
 ---
 
-## 📊 Architecture Decision Framework
+## 2. 📊 Architecture Decision Framework
 
 ### Decision Tree: Deployment Model Selection
 
@@ -95,6 +95,7 @@ graph TD
 
 ### Technology Selection Scoring Framework
 
+**JSON Template (for automated scoring):**
 ```json
 {
   "evaluation_criteria": {
@@ -125,9 +126,19 @@ graph TD
 }
 ```
 
+**Markdown Table (for manual evaluation):**
+
+| Criteria | Weight | Technology A Score (1-5) | Technology B Score (1-5) | Technology A Weighted | Technology B Weighted |
+|---|---|---|---|---|---|
+| **Technical Fit** | 30% | | | | |
+| **Operational Fit** | 25% | | | | |
+| **Strategic Fit** | 25% | | | | |
+| **Cost Efficiency** | 20% | | | | |
+| **Total** | **100%** | | | **(Sum)** | **(Sum)** |
+
 ---
 
-## 🔧 Component Selection Toolkit
+## 3. 🔧 Component Selection Toolkit
 
 ### 3.1 Data Ingestion Layer
 
@@ -151,6 +162,7 @@ graph TD
 
 #### Ingestion Tool Selection Template
 
+**JSON Template (for system integration):**
 ```json
 {
   "ingestion_requirement": {
@@ -176,6 +188,14 @@ graph TD
   }
 }
 ```
+
+**Markdown Table (for easy use in documents):**
+
+| Requirement ID | Data Sources | Volume | Latency | Recommended Tool | Rationale |
+|---|---|---|---|---|---|
+| ING-001 | | | | | |
+| ING-002 | | | | | |
+| ING-003 | | | | | |
 
 ### 3.2 Data Storage Layer
 
@@ -258,7 +278,7 @@ graph TD
 
 ---
 
-## 🏗️ Architecture Pattern Library
+## 4. 🏗️ Architecture Pattern Library
 
 ### 4.1 Lambda Architecture
 
@@ -374,7 +394,7 @@ lambda_architecture:
 
 ---
 
-## 📋 Architecture Documentation Templates
+## 5. 📋 Architecture Documentation Templates
 
 ### 5.1 Architecture Decision Record (ADR) Template
 
@@ -468,7 +488,7 @@ lambda_architecture:
 
 ---
 
-## 🔒 Security & Compliance Architecture
+## 6. 🔒 Security & Compliance Architecture
 
 ### 6.1 Security Architecture Template
 
@@ -547,7 +567,7 @@ lambda_architecture:
 
 ---
 
-## ✅ Architecture Validation & Review Framework
+## 7. ✅ Architecture Validation & Review Framework
 
 ### 7.1 Architecture Review Checklist
 
@@ -640,7 +660,7 @@ lambda_architecture:
 
 ---
 
-## 📚 Architecture Scenarios & Examples
+## 8. 📚 Architecture Scenarios & Examples
 
 ### 8.1 Scenario: E-commerce Analytics Platform
 
@@ -758,7 +778,7 @@ Manufacturing company needs to process sensor data from factory equipment for pr
 
 ---
 
-## 🔄 Architecture Evolution & Maintenance
+## 9. 🔄 Architecture Evolution & Maintenance
 
 ### 9.1 Architecture Lifecycle Management
 
@@ -799,7 +819,7 @@ Manufacturing company needs to process sensor data from factory equipment for pr
 
 ---
 
-## 🚀 Implementation Transition
+## 10. 🚀 Implementation Transition
 
 ### 10.1 Architecture to Implementation Handoff
 
@@ -829,7 +849,7 @@ Manufacturing company needs to process sensor data from factory equipment for pr
 
 ---
 
-## 📖 Quick Reference
+## 11. 📖 Quick Reference
 
 ### LLM Architecture Prompts
 
