@@ -1,21 +1,25 @@
-MIT License
+Copyright (c) 2025 Kainos Software Ltd. All rights reserved.
 
-Copyright (c) 2025 Odhran (odhran-kainos)
+Proprietary and Confidential – Internal Use Only.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This repository and its contents (“Materials”) are the confidential and proprietary information of Kainos Software Ltd.
+No licence or other rights (express or implied) are granted to any party except as expressly stated below.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permitted Internal Use:
+- Employees of Kainos Software Ltd may view, use, and modify the Materials solely for legitimate internal business purposes.
+- Derivative works created from the Materials must remain strictly internal and retain all proprietary notices.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-aUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-out of or in connection with THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Restrictions:
+- No distribution, disclosure, publication, hosting, or provision of any portion of the Materials to any external party (including clients, vendors, contractors, or open-source projects).
+- No use by contractors or other non-employees without prior written authorisation.
+- No sublicensing, resale, or commercial offering incorporating the Materials outside Kainos Software Ltd.
+- Do not remove or alter this notice or any attribution appearing in the Materials.
+
+Upon termination of employment, all local copies must be deleted or returned.
+
+DISCLAIMER:
+THE MATERIALS ARE PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR ACCURACY. IN NO EVENT SHALL KAINOS SOFTWARE LTD BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATING TO USE OF THE MATERIALS.
+
+If you are not an authorised employee of Kainos Software Ltd, you must not access, use, copy, or retain these Materials.
+
+(Planned: repository to be marked private; until then treat all contents as confidential.)
