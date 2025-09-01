@@ -1,3 +1,12 @@
+---
+goal: "Generate structured discovery and requirements plan for e-commerce data platform"
+context_requirements: ["docs/01_discovery_requirements.md"]
+expected_output_format: "Markdown with structured sections"
+phase_id: "01"
+version: "1.1.0"
+tags: ["discovery", "requirements", "ecommerce", "stakeholders"]
+---
+
 ### **Prompt for `01_discovery_requirements.md`**
 
 **Scenario:** Your company is embarking on a new data platform initiative to support a growing e-commerce business. The initial request from the business is vague: "We need a data platform to help us understand our customers better and improve sales." You need to conduct a thorough discovery and requirements gathering phase.
