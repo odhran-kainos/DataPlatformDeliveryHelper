@@ -1,3 +1,14 @@
+---
+phase_id: "01"
+title: "Discovery & Requirements Gathering"
+status: "active"
+version: "1.1.0"
+tags: ["discovery", "requirements", "stakeholders", "llm-collaboration"]
+owners: ["team-lead"]
+last_reviewed: "2025-01-01"
+framework_version: "0.1.0"
+---
+
 [⬅️ Back to Main SDLC Page](00_data_platform_sdlc.md)
 
 # Discovery & Requirements Gathering for Data Platform Projects

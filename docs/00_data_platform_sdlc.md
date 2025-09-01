@@ -1,6 +1,85 @@
-# SDLC for Data Platform Development (Technology-Agnostic)
+---
+phase_id: "00"
+title: "Data Platform SDLC Overview"
+status: "active"
+version: "1.1.0"
+tags: ["sdlc", "overview", "framework", "lifecycle"]
+owners: ["framework-team"]
+last_reviewed: "2025-01-01"
+framework_version: "0.1.0"
+---
 
-This document outlines a high-level, technology-agnostic Software Development Life Cycle (SDLC) for building data platforms. It is designed for consultancy environments where multiple clients and technologies (e.g., Databricks, Azure Data Factory, AWS, etc.) are involved.
+# Data Platform SDLC Overview
+
+## Framework Purpose
+
+This document provides a comprehensive, technology-agnostic Software Development Life Cycle (SDLC) framework for building enterprise data platforms. Optimized for LLM-assisted development and designed for consultancy environments where multiple clients, technologies, and delivery approaches converge.
+
+## Guiding Principles
+
+### 1. Modularity
+- **Reusable components**: Design patterns that work across different technology stacks
+- **Interchangeable parts**: Ability to swap technologies without redesigning entire architecture
+- **Standard interfaces**: Consistent integration patterns between system components
+
+### 2. Governance by Design
+- **Built-in compliance**: Regulatory requirements integrated from day one
+- **Automated controls**: Policy enforcement through code and configuration
+- **Audit readiness**: Comprehensive logging and traceability throughout the platform
+
+### 3. Automation-First
+- **Infrastructure as Code**: All infrastructure defined and managed through code
+- **Continuous deployment**: Automated deployment pipelines with quality gates
+- **Self-healing systems**: Automatic recovery from common failure scenarios
+
+### 4. Observability
+- **Comprehensive monitoring**: Full visibility into data flows, system health, and performance
+- **Proactive alerting**: Early warning systems for potential issues
+- **Continuous optimization**: Data-driven improvements to platform performance
+
+## Layering Model
+
+The framework follows a four-layer architectural model:
+
+### Layer 1: Ingest
+- **Purpose**: Acquire data from various sources
+- **Components**: Connectors, ingestion pipelines, data validation
+- **Key patterns**: Batch processing, stream processing, event-driven ingestion
+
+### Layer 2: Process
+- **Purpose**: Transform and enrich data for business value
+- **Components**: ETL/ELT engines, business logic, data quality rules
+- **Key patterns**: Medallion architecture, data mesh, feature engineering
+
+### Layer 3: Model
+- **Purpose**: Structure data for analytics and machine learning
+- **Components**: Data warehouses, feature stores, ML platforms
+- **Key patterns**: Dimensional modeling, data vault, feature management
+
+### Layer 4: Serve
+- **Purpose**: Deliver data to end users and applications
+- **Components**: APIs, dashboards, reports, data products
+- **Key patterns**: Self-service analytics, embedded analytics, real-time serving
+
+## Phase Overview
+
+The SDLC consists of 12 interconnected phases with clear inputs, outputs, and dependencies:
+
+| Phase | Name | Primary Focus | Key Deliverables | Duration |
+|-------|------|---------------|------------------|----------|
+| 00 | Framework Overview | Lifecycle understanding | Framework alignment | 1-2 days |
+| 01 | Discovery & Requirements | Business alignment | Requirements document | 1-2 weeks |
+| 02 | Architecture & Design | Technical foundation | Architecture blueprints | 2-3 weeks |
+| 03 | Environment Setup | Infrastructure readiness | Development environments | 1-2 weeks |
+| 04 | Data Ingestion | Data acquisition | Ingestion pipelines | 2-4 weeks |
+| 05 | Data Storage | Data organization | Storage architecture | 1-3 weeks |
+| 06 | Data Processing | Data transformation | Processing workflows | 3-6 weeks |
+| 07 | Analytics & Consumption | Value delivery | Analytics solutions | 2-4 weeks |
+| 08 | Testing & Quality | Validation framework | Test suites | 2-3 weeks |
+| 09 | Deployment & Release | Production readiness | Deployment automation | 1-2 weeks |
+| 10 | Monitoring & Support | Operational excellence | Monitoring systems | 1-2 weeks |
+| 11 | Documentation & Knowledge | Knowledge transfer | Documentation suite | 1-2 weeks |
+| 12 | Continuous Improvement | Platform evolution | Optimization roadmap | Ongoing |
 
 ---
 
