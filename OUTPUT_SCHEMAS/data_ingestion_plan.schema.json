@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/data_ingestion_plan.schema.json",
+  "title": "Data Ingestion Plan",
+  "description": "Schema for structured data ingestion planning and configuration",
+  "type": "object",
+  "required": [
+    "source_systems",
+    "ingestion_mode",
+    "latency_sla_minutes",
+    "transformations",
+    "storage_zones",
+    "quality_rules",
+    "lineage"
+  ],
+  "properties": {
+    "source_systems": {
+      "type": "array",
+      "description": "List of source systems for data ingestion",
+      "items": {
+        "type": "object",
+        "required": ["name", "type", "sensitivity_level", "sla"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the source system"
+          },
+          "type": {
+            "type": "string",
+            "description": "Type of source system",
+            "enum": ["database", "file", "api", "stream", "event", "batch"]
+          },
+          "sensitivity_level": {
+            "type": "string",
+            "description": "Data sensitivity classification",
+            "enum": ["public", "internal", "confidential", "restricted"]
+          },
+          "sla": {
+            "type": "object",
+            "description": "Service level agreement parameters",
+            "required": ["availability_percent", "max_downtime_minutes"],
+            "properties": {
+              "availability_percent": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "max_downtime_minutes": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "ingestion_mode": {
+      "type": "string",
+      "description": "Primary ingestion pattern",
+      "enum": ["batch", "stream", "microbatch"]
+    },
+    "latency_sla_minutes": {
+      "type": "number",
+      "description": "Maximum acceptable latency from source to destination in minutes",
+      "minimum": 0
+    },
+    "transformations": {
+      "type": "array",
+      "description": "Data transformations to be applied during ingestion",
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "priority"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Transformation name or identifier"
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description of the transformation logic"
+          },
+          "priority": {
+            "type": "integer",
+            "description": "Execution priority (1 = highest priority)",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "storage_zones": {
+      "type": "array",
+      "description": "Target storage zones for ingested data",
+      "items": {
+        "type": "string",
+        "enum": ["raw", "staging", "curated", "analytics"]
+      }
+    },
+    "quality_rules": {
+      "type": "array",
+      "description": "Data quality validation rules",
+      "items": {
+        "type": "object",
+        "required": ["rule_id", "dimension", "expression", "severity"],
+        "properties": {
+          "rule_id": {
+            "type": "string",
+            "description": "Unique identifier for the quality rule"
+          },
+          "dimension": {
+            "type": "string",
+            "description": "Data quality dimension being validated",
+            "enum": ["completeness", "accuracy", "timeliness", "consistency", "uniqueness"]
+          },
+          "expression": {
+            "type": "string",
+            "description": "Validation expression or SQL condition"
+          },
+          "severity": {
+            "type": "string",
+            "description": "Severity level of quality rule violation",
+            "enum": ["critical", "high", "medium", "low"]
+          }
+        }
+      }
+    },
+    "lineage": {
+      "type": "array",
+      "description": "Data lineage mapping from source to destination",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "type"],
+        "properties": {
+          "from": {
+            "type": "string",
+            "description": "Source system or dataset identifier"
+          },
+          "to": {
+            "type": "string",
+            "description": "Target system or dataset identifier"
+          },
+          "type": {
+            "type": "string",
+            "description": "Type of lineage relationship",
+            "enum": ["direct_copy", "transformation", "aggregation", "join", "filter"]
+          }
+        }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "description": "Identified risks and mitigation strategies (optional)",
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "mitigation"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique risk identifier"
+          },
+          "description": {
+            "type": "string",
+            "description": "Risk description and potential impact"
+          },
+          "mitigation": {
+            "type": "string",
+            "description": "Proposed mitigation strategy"
+          }
+        }
+      }
+    }
+  }
+}
